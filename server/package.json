@@ -1,0 +1,17 @@
+{
+  "name": "books-api",
+  "version": "1.0.0",
+  "description": "Books API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Antonio Ribarević",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "helmet": "^5.1.0"
+  }
+}
