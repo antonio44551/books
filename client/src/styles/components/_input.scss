@@ -1,0 +1,35 @@
+.input-wrapper {
+  position: relative;
+  margin-bottom: $spacer--default;
+
+  input {
+    height: 50px;
+    width: 100%;
+    padding: $spacer--extrasmall $spacer--extrasmall $spacer--extrasmall
+      $spacer--default * 3;
+    box-sizing: border-box;
+    border: 0;
+    outline: none;
+    border-radius: 4px;
+    color: $very-dark-blue;
+    background: $white;
+    border: 1px solid $very-dark-blue;
+
+    &::placeholder {
+      color: $very-dark-blue;
+      font-family: $font-family;
+      font-size: $font-size--secondary;
+    }
+  }
+
+  input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+  }
+
+  svg {
+    position: absolute;
+    top: 18px;
+    left: 15px;
+  }
+}

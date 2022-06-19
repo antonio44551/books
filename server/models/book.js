@@ -35,6 +35,10 @@ const BookSchema = new mongoose.Schema({
   imageUrl: {
     type: String,
   },
+  isFavorite: {
+    type: Boolean,
+    default: false,
+  },
 });
 
 const Book = mongoose.model("Book", BookSchema);

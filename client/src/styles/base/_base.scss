@@ -1,0 +1,22 @@
+@import "settings";
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: $font-family;
+
+  font-weight: 600;
+  font-size: $font-size--base;
+  overflow-x: hidden;
+  color: $very-dark-blue;
+  background: $white;
+
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

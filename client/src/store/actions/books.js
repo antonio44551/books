@@ -14,9 +14,9 @@ export const searchBooks = (filter) => {
   };
 };
 
-export const setBook = (bookId) => {
+export const setBookDetails = (bookId) => {
   return {
-    type: actionTypes.SET_BOOK,
+    type: actionTypes.SET_BOOK_DETAILS,
     bookId,
   };
 };
@@ -47,5 +47,11 @@ export const toggleFavorite = (bookId) => {
   return {
     type: actionTypes.TOGGLE_FAVORITE,
     bookId,
+  };
+};
+
+export const viewFavorites = () => {
+  return {
+    type: actionTypes.VIEW_FAVORITES,
   };
 };

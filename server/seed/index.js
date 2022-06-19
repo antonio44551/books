@@ -17,7 +17,8 @@ const createFakeBook = () => {
   const rating = faker.datatype.number({ min: 1, max: 5 });
   const totalRatings = faker.datatype.number({ min: 10, max: 500 });
   const reviews = faker.datatype.number({ min: 1, max: 500 });
-  const imageUrl = faker.image.image();
+  const imageUrl = faker.image.animals(640, 480, true);
+  const isfavorite = faker.datatype.boolean();
 
   const bookData = new Book({
     _id: new mongoose.Types.ObjectId().toHexString(),
@@ -29,6 +30,7 @@ const createFakeBook = () => {
     totalRatings,
     reviews,
     imageUrl,
+    isfavorite,
   });
   return bookData;
 };

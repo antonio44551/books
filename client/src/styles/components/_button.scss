@@ -1,0 +1,18 @@
+.books-button {
+  outline: none;
+  height: 30px;
+  padding: $spacer--extrasmall $spacer--medium;
+  border: 0;
+  border-radius: 4px;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: $very-dark-blue;
+  background: $very-light-gray;
+  border: 1px solid $very-dark-blue;
+  svg {
+    margin-right: $spacer--small;
+    font-size: $font-size--base;
+  }
+}

@@ -1,9 +1,10 @@
 export {
   setAllBooks,
   searchBooks,
-  setBook,
+  setBookDetails,
   createBook,
   updateBook,
   deleteBook,
   toggleFavorite,
+  viewFavorites,
 } from "./books";

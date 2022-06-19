@@ -73,6 +73,7 @@ const updateBook = async (req, res) => {
       totalRatings,
       reviews,
       imageUrl,
+      isFavorite,
     } = req.body;
     const updatedBookData = {
       author,
@@ -83,6 +84,7 @@ const updateBook = async (req, res) => {
       totalRatings,
       reviews,
       imageUrl,
+      isFavorite,
     };
     const updatedBook = await Book.findByIdAndUpdate(
       req.params.id,
@@ -110,10 +112,21 @@ const deleteBook = async (req, res) => {
   }
 };
 
+const deleteAll = async (req, res) => {
+  try {
+    await Book.deleteMany({});
+    res.status(200).json({ code: 200, message: "Books deleted!" });
+  } catch (error) {
+    console.error("An error occurred", error);
+    res.status(500).json({ code: 500, message: error.message });
+  }
+};
+
 module.exports = {
   getBooks,
   getBook,
   createBook,
   updateBook,
   deleteBook,
+  deleteAll,
 };

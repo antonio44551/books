@@ -1,0 +1,79 @@
+.book-page-infos {
+  display: flex;
+  flex-direction: column;
+  padding: 35px;
+
+  @media (min-width: 1025px) {
+    flex-direction: row;
+  }
+
+  img {
+    width: 300px;
+    min-width: 300px;
+    height: 180px;
+    min-height: 180px;
+    object-fit: cover;
+    margin-bottom: $spacer--default;
+
+    @media (min-width: 768px) {
+      width: 500px;
+      height: 280px;
+      min-width: 500px;
+      min-height: 280px;
+    }
+    @media (min-width: 1025px) {
+      margin-right: $spacer--largest * 2;
+      width: 775px;
+      height: 435px;
+      min-width: 775px;
+      min-height: 435px;
+    }
+  }
+
+  &-right {
+    h1 {
+      font-weight: bold;
+      font-size: $font-size--extra-large;
+      margin: 0;
+      margin-bottom: $spacer--default;
+    }
+  }
+
+  &-description {
+    margin-bottom: $spacer--largest;
+    &-left {
+      margin: $spacer--largest 0;
+    }
+
+    &-row {
+      width: 100%;
+      margin-bottom: $spacer--small;
+    }
+
+    &-title {
+      font-weight: 700;
+      margin-right: $spacer--extrasmall;
+    }
+  }
+
+  &-actions {
+    display: flex;
+    flex-direction: column;
+
+    &-favorite {
+      margin-right: 15px;
+    }
+
+    &-edit {
+      margin-right: 15px;
+    }
+
+    &-delete {
+      margin-right: 15px;
+    }
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import "./base/fonts.scss";
+@import "./base/settings";
+@import "./base/base.scss";
+
+//components
+@import "./components/header";
+@import "./components/button";
+@import "./components/book-card";
+@import "./components/input";
+@import "./components/book-form";
+
+//pages
+@import "./pages/home-page.scss";
+@import "./pages/book-page.scss";
